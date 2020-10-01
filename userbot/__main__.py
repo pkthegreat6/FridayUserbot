@@ -5,7 +5,7 @@ import telethon.utils
 from telethon import TelegramClient
 
 from userbot import bot
-from userbot.utils import load_module
+from userbot.utils import load_module, tg_module
 from var import Var
 
 
@@ -42,6 +42,15 @@ for name in files:
         path1 = Path(f.name)
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
+
+path = "userbot/plugins/assistant/*.py"
+files = glob.glob(path)
+for name in files:
+    with open(name) as f:
+        path1 = Path(f.name)
+        shortname = path1.stem
+        tgbot_module(shortname.replace(".py", ""))
+
 
 
 print("Friday Have Been Installed Successfully !")
