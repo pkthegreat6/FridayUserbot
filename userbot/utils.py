@@ -430,8 +430,8 @@ def tgbot_module(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        print(".Starting To Import Assistant Modules.")
-        print("Successfully (re)imported " + shortname)
+        print("Starting To Import Assistant Modules")
+        print("Successfully assistant imported " + shortname)
     else:
         import importlib
         import sys
