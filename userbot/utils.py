@@ -447,4 +447,4 @@ def tgbot_module(shortname):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["userbot.plugins." + shortname] = mod
-        print("Successfully imported " + shortname)
+        print("Successfully Assistant imported " + shortname)
