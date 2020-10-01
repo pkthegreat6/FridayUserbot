@@ -5,7 +5,7 @@ import telethon.utils
 from telethon import TelegramClient
 
 from userbot import bot
-from userbot.utils import load_module, tg_module
+from userbot.utils import load_module, tgbot_module
 from var import Var
 
 
